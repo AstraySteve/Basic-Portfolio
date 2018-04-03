@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html>
+    <!--
+        Steven Tran
+        Assignment 1, 2018
+        UofT SCS Coding Bootcamp
+    -->
     <head>
         <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
         <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
@@ -7,33 +12,34 @@
     </head>
 
     <body>
-        <div>
-            <header>
-                <h1>Steven Tran</h1>
-                <!-- TO DO: Add links About, Portifolio and Contact-->
-                <a href="">Contact</a>
-                <a href="">Portfoilo</a>
-                <a href="">About</a>
-            </header>
-        </div>
+        <header>
+            <div class="mainContent">
+                <h1 id="mainHeading">Steven Tran</h1>
+                <nav>
+                    <ul id="navLinks">
+                        <li><a href="./index.html">About</a></li>
+                        <li><a href="./portfolio.html">Portfolio</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-        <div>
-            <section>
+        <div id="mainBackground">
+            <section class="mainContent">
                 <header>
-                    <h2>About Me</h2>
+                    <h1 id="sectionHeading">About Me</h1>
                 </header>
                 <article>
-                    <!--TO DO: ADD image and paragraphs about me-->
                     <img id="bio-image" src="https://cdn.shopify.com/s/files/1/0919/6618/products/203.jpg?v=1437451142">
-                    <p>Temp Text to be filled in with paragraphs about me.</p>
+                    <p>TEMP PARAGRAPH</p>
+                    <p>Random text to be filled with infomation about me</p>
                 </article>
             </section>
         </div>
 
-        <div>
-            <footer>
-                Copyright &copy;
-            </footer>
-        </div>
+        <footer id="mainFooter">
+            Copyright &copy;
+        </footer>
     </body>
 </html>
