@@ -26,12 +26,13 @@ nav{
     padding: 25px 0;
 }
 
-section{
+section.mainContent{
     /*Default properties for <section> tag*/
     background-color: #ffffff;
-    border-bottom: 2px solid #dddddd;
+    border: 1px solid #dddddd;
     box-sizing: border-box;
     padding: 25px;
+    margin: 10px 12% 30px;
 }
 
 article{
@@ -42,7 +43,7 @@ article{
 .mainContent{
     /*Setting width of the main content sections*/
     width: 960px;
-    margin: 0 30px;
+    margin: 0 12%;
 }
 
 /*id CSS*/
@@ -92,17 +93,23 @@ ul#navLinks li:not(:first-child):before{
     padding: 5px;
 }
 
+/*EXPERIMENTAL ID*/
 #mainBackground{
     /*Background image for the main section*/
     background-image: url("../images/background/concrete_seamless.png");
-    padding-top: 30px;
-    padding-bottom: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 60px;
+
+    overflow: auto; /*scrolling property*/
 }
 
-/*temp CSS, REMOVE when Done
+/*temp CSS, REMOVE when Done*/
 *{
     border: 1px solid red !important;
-}*/
+}
 
 #bio-image{
     width: 200px;
