@@ -11,7 +11,7 @@ html, body{
     color:#777777;
     background-color: #4aaaa5;
     
-    /*Properties for sticky footer*/
+    /*Properties for sticky footer, flexbox for variable height*/
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -33,12 +33,45 @@ nav{
 section.mainContent{
     background-color: #ffffff;
     border: 1px solid #dddddd;
-    padding: 25px;
+    padding: 10px 30px 20px;
     margin-bottom: 40px;
 
-    /*ensure total width stays within 960px*/
+    /*ensure total width (including padding, border and margins) stays within 960px*/
     box-sizing: border-box;
 }
+
+form, p{
+    /*setting height of the line of text*/
+    line-height: 1.6;
+}
+
+a{
+    /*Set colour for anchor links*/
+    color:#777777;
+}
+a:link{
+    /*default look for links*/
+    text-decoration: none;
+}
+
+textarea{
+    /*Properties for the message box*/
+    color:#777777;
+    width: 100%;
+    box-sizing: border-box;
+    height: 200px;
+    padding: 5px 10px;
+}
+
+input[type=submit]{
+    /*Properties of the submit button*/
+    background-color: #4aaaa5;
+    color: #ffffff;
+    padding: 15px 30px;
+    cursor: pointer;
+    border: none;
+}
+
 /*Class CSS*/
 .mainBackground{
     /*Properties of the main background image*/
@@ -49,6 +82,7 @@ section.mainContent{
 }
 
 .mainContent{
+    /*Properties that sets the size of the main blocks*/
     width: 960px;
     margin: 0 12%;
 }
@@ -61,6 +95,13 @@ section.mainContent{
     color: #4aaaa5;
 }
 
+.inputForm{
+    color:#777777;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px 10px;
+}
+
 /*ID Css*/
 #mainHeading{
     /*Specific properties for the Main Header*/
@@ -70,7 +111,7 @@ section.mainContent{
     font-weight: bold;
     padding: 35px;
 
-    /*Same job as float: left + clear codes*/
+    /*Same job as "float: left" + "clear" codes*/
     display: inline-block;
 }
 
@@ -104,7 +145,5 @@ ul#navLinks li:not(:first-child):before{
 #bio-image{
     width: 200px;
     float: left;
-}
-p{
-    clear: both;
+    margin-right: 20px;
 }
