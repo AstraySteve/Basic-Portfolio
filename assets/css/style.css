@@ -40,6 +40,13 @@ section.mainContent{
     box-sizing: border-box;
 }
 
+section.mainContent::after{
+    /*clearfix hack*/
+    clear: both;
+    content: "";
+    display: block;
+}
+
 form, p{
     /*setting height of the line of text*/
     line-height: 1.6;
