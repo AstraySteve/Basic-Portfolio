@@ -183,13 +183,13 @@ ul#navLinks li:not(:first-child):before{
     margin-top: 10px;
 }
 
-/*temp CSS, REMOVE when Done
-*{
-    border: 1px solid red !important;
-}*/
-
 #bio-image{
     width: 200px;
     float: left;
     margin-right: 20px;
 }
+
+/*temp CSS, REMOVE when Done
+*{
+    border: 1px solid red !important;
+}*/
